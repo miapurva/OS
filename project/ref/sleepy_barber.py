@@ -55,11 +55,14 @@ class Barber:
 				print 'next_seat {0}'.format(self.next_seat)
 				#i=10
 				if self.next_seat == 0:
+					
 					r = (1.25,-side,0)
+
 					while cust[id1-1].x > 1.25:
 						rate(10)
 						#cust[id1-1].pos=r
-						cust[id1-1].x=cust[id1-1].x - 1.91	
+						cust[id1-1].x=cust[id1-1].x - 1.91
+
 					cust[id1-1].y=-2.5	
 					cust[id1-1].z=0										
 				elif self.next_seat == 1:
