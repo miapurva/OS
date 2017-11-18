@@ -143,7 +143,7 @@ def main():
 	distance=0
 	
 	for i in range(NUM_SAVAGES+1):
-		savage= arrow(pos = vector(-1*side,0,0), axis=vector(+0.2,+0.2,0), color=color.red)
+		#savage= arrow(pos = vector(-1*side,0,0), axis=vector(+0.2,+0.2,0), color=color.red)
 	
 		#print i
 		sav_id.append(0)
@@ -155,7 +155,7 @@ def main():
 		sav_id[i]=i
 		print "Savage ",sav_id[i], " entered"
 		
-		savagexx[i]= arrow(pos = vector(2,-2,s3*4+6+distance), axis=vector(0,1.8,0), color=color.green)
+		savagexx[i]= arrow(pos = vector(2,-2,s3*4+6+distance), axis=vector(0,1.8,0), color=color.black)
 		
 		SAVAGES_thread=threading.Thread(target = Sav_Co.Savage, args = (sav_id[i],))
 		SAVAGES_thread.start()

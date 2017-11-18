@@ -143,7 +143,7 @@ def main():
 	distance=0
 	
 	for i in range(NUM_SAVAGES+1):
-		savage= arrow(pos = vector(-1*side,0,0), axis=vector(+0.2,+0.2,0), color=color.red)
+		#savage= arrow(pos = vector(-1*side,0,0), axis=vector(+0.2,+0.2,0), color=color.red)
 	
 		#print i
 		sav_id.append(0)
