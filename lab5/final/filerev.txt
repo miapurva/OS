@@ -1,0 +1,10 @@
+!!
+!
+!3
+!5
+ls
+rm abc.txt
+subl abc.txt
+rmdir abc
+mkdir abc
+history

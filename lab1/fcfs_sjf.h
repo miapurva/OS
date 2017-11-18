@@ -1,0 +1,21 @@
+//#define n 10
+class fcfs_sjf_h
+{
+
+private:
+//int n;
+int pid[10];
+int turn_Around_Time[10];
+int waiting_Time[10];
+int completion_Time[10];
+int arrival_Time[10];
+int burst_Time[10];
+int duplicate_Arrival_Time[10];
+//int duplicate_Burst_Time[10];
+int check[10];
+public:
+void fcfs();
+void sjf();
+//int minimum_burst();
+//int minimum_arrival();
+};
