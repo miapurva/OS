@@ -15,7 +15,7 @@ NUM_SAVAGES=5
 savagexx= [ ]
 food = [ ]
 #cook
-cookxxx= arrow(pos = vector(-3.7,-2,s3*4+6), axis=vector(0,1.8,0), color=color.blue)
+cookxxx= arrow(pos = vector(-3.7,-2,s3*4+6), axis=vector(0,1.8,0), color=color.orange)
 
 sem_emptypot=threading.Semaphore(0)
 sem_fullpot=threading.Semaphore(0)
@@ -88,12 +88,12 @@ class Savages_cook:
 
 def main():
 
-	wallRight = box (pos=vector( 2*side, 0, 0), size=vector(thickness, s2, 4*s3),  color = color.gray(1.0))
-	wallLeft = box (pos=vector(-2*side, 0, 0), size=vector(thickness, s2, 4*s3),  color = color.gray(1.0))
-	wallDown = box (pos=vector(0,-side, 0), size=vector(2*s3, thickness, 8*s3),  color = color.orange, material=materials.wood)
-	wallTop = box (pos=vector(0,side, 0), size=vector(2*s3, thickness, 4*s3),  color = color.gray(0.7))
-	wallBack = box(pos=vector(0, 0, -2*side), size=vector(2*s2, s2, thickness), color = color.gray(1.0))
-	table = cone(pos=(0,-1,15), axis=(0,-side,0),radius=1.5,color=color.orange)
+	wallRight = box (pos=vector( 2*side, 0, 0), size=vector(thickness, s2, 6*s3),  color = color.white, material=materials.wood)
+	wallLeft = box (pos=vector(-2*side, 0, 0), size=vector(thickness, s2, 6*s3),  color = color.white, material=materials.wood)
+	wallDown = box (pos=vector(0,-side, 0), size=vector(2*s3, thickness, 8*s3),  color = color.white, material=materials.wood)
+	wallTop = box (pos=vector(0,side, 0), size=vector(2*s3, thickness, 6*s3),  color = color.white, material=materials.wood)
+	wallBack = box(pos=vector(0, 0, -2*side), size=vector(2*s2, s2, thickness), color = color.white, material=materials.wood )
+	table = cone(pos=(0,-1,15), axis=(0,-side,0),radius=1.5,color=color.white, material=materials.wood)
 	
 	#final destination of the savages is 4*s3
 	#savage1= arrow(pos = vector(-1,-2,4*s3-2), axis=vector(0,1.8,0), color=color.red)
@@ -155,7 +155,7 @@ def main():
 		sav_id[i]=i
 		print "Savage ",sav_id[i], " entered"
 		
-		savagexx[i]= arrow(pos = vector(2,-2,s3*4+6+distance), axis=vector(0,1.8,0), color=color.green)
+		savagexx[i]= arrow(pos = vector(2,-2,s3*4+6+distance), axis=vector(0,1.8,0), color=(0.8,0.1,0.3))
 		
 		SAVAGES_thread=threading.Thread(target = Sav_Co.Savage, args = (sav_id[i],))
 		SAVAGES_thread.start()
