@@ -1,3 +1,10 @@
+'''
+PROJECT: SYNCHRONIZATION PROBELM- DINING SAVAGES
+Usage : python 11dine_with_us.py
+Programmers: CED15I017,COE15B036,COE15B010
+'''
+
+
 from visual import *
 
 from threading import Thread, Lock
@@ -104,21 +111,7 @@ def main():
 	wallTop = box (pos=vector(0,side, 0), size=vector(2*s3, thickness, 6*s3),  color = color.white, material=materials.wood)
 	wallBack = box(pos=vector(0, 0, -2*side), size=vector(2*s2, s2, thickness), color = color.white, material=materials.wood )
 	table = cone(pos=(0,-1,15), axis=(0,-side,0),radius=1.5,color=color.white, material=materials.wood)
-	
-	#final destination of the savages is 4*s3
-	#savage1= arrow(pos = vector(-1,-2,4*s3-2), axis=vector(0,1.8,0), color=color.red)
-	
-	#source point of the savages
-	#savage2= arrow(pos = vector(2,-2,s3*4+6), axis=vector(0,1.8,0), color=color.green)
-	#savage2= arrow(pos = vector(2,-2,s3*4+6-i), axis=vector(0,1.8,0), color=color.green)
-	'''
-	r=vector(-1,-2,4*s3-2)
-	while r.x < 5:
-		rate(5)
-		savagexx[i].pos=r
-		r.x=r.x+1
-	'''
-	#food = [ ]
+
 	for i in range(0,15):
 		print i
 		food.append(0)
